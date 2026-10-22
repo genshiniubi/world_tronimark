@@ -1,0 +1,63 @@
+{
+  "id": "py-control-02",
+  "slug": "parcel-codes",
+  "title": "快递柜取件码",
+  "moduleId": "py-control",
+  "order": 4,
+  "difficulty": "easy",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "py-loops",
+    "py-strings"
+  ],
+  "prerequisites": [
+    "py-control-01"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "统计一组取件码中格式正确的数量。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\n123456 12ab56 654321 12345 000000\n",
+      "output": "3\n",
+      "explanation": "123456、654321、000000 合法。"
+    },
+    {
+      "id": "sample-2",
+      "input": "1\n12345\n",
+      "output": "0\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "2\n111111 222222\n",
+      "output": "2\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "3\n1234567 12345 000001\n",
+      "output": "1\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "1\nabcdef\n",
+      "output": "0\n"
+    }
+  ],
+  "hints": [
+    "len(code) == 6 且 code.isdigit()。",
+    "注意取件码可能以 0 开头，不要转成 int 再判断。",
+    "用循环累计合法数量。"
+  ],
+  "similar": []
+}

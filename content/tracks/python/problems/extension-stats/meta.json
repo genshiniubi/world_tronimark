@@ -1,0 +1,58 @@
+{
+  "id": "py-stdlib-01",
+  "slug": "extension-stats",
+  "title": "文件扩展名统计",
+  "moduleId": "py-stdlib",
+  "order": 15,
+  "difficulty": "medium",
+  "scenario": "system",
+  "scenarioLabel": "系统工具",
+  "knowledgePoints": [
+    "py-stdlib",
+    "py-files"
+  ],
+  "prerequisites": [
+    "py-text-02"
+  ],
+  "estimatedMinutes": 15,
+  "summary": "用 pathlib 提取扩展名并统计数量。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\na.txt b.py c.txt d E.md\n",
+      "output": ".md 1\n.py 1\n.txt 2\nnone 1\n",
+      "explanation": ".md、.txt 按字典序；d 没有扩展名。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3\nx.tar.gz\ny.gz\nz.zip\n",
+      "output": ".gz 2\n.zip 1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "1\nREADME\n",
+      "output": "none 1\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "2\na.PDF\nb.pdf\n",
+      "output": ".PDF 1\n.pdf 1\n"
+    }
+  ],
+  "hints": [
+    "用 pathlib.Path(name).suffix。",
+    "suffix 为空时记为 none。",
+    "用 dict 计数后排序。"
+  ],
+  "similar": []
+}

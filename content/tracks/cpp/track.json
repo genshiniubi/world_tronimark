@@ -1,0 +1,198 @@
+{
+  "id": "cpp",
+  "title": "C++ 从入门到工程实践",
+  "subtitle": "从第一行代码到容器、类与 RAII",
+  "description": "面向零基础到进阶的 C++ 学习路径。每个模块先读知识卡，再用真实情景题练习，最后通过判题和 AI 复盘巩固。",
+  "kind": "coding",
+  "language": "cpp",
+  "accent": "#2f6bff",
+  "icon": "cpp",
+  "order": 1,
+  "modules": [
+    {
+      "id": "cpp-start",
+      "title": "起步：程序、输入输出",
+      "summary": "写出第一个可交互程序，理解变量、类型和格式化输出。",
+      "difficulty": "beginner",
+      "order": 1,
+      "knowledgePoints": [
+        "cpp-io",
+        "cpp-variables",
+        "cpp-arithmetic"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "cpp-control",
+      "title": "流程控制：让程序做判断",
+      "summary": "用条件分支和循环处理规则、累加与边界。",
+      "difficulty": "beginner",
+      "order": 2,
+      "knowledgePoints": [
+        "cpp-conditions",
+        "cpp-loops"
+      ],
+      "prerequisites": [
+        "cpp-start"
+      ]
+    },
+    {
+      "id": "cpp-functions",
+      "title": "函数与递归",
+      "summary": "把逻辑拆成可复用函数，理解参数传递和递归出口。",
+      "difficulty": "easy",
+      "order": 3,
+      "knowledgePoints": [
+        "cpp-functions",
+        "cpp-recursion"
+      ],
+      "prerequisites": [
+        "cpp-control"
+      ]
+    },
+    {
+      "id": "cpp-data",
+      "title": "数组与字符串",
+      "summary": "批量保存数据，处理下标、遍历和字符。",
+      "difficulty": "easy",
+      "order": 4,
+      "knowledgePoints": [
+        "cpp-arrays",
+        "cpp-strings"
+      ],
+      "prerequisites": [
+        "cpp-functions"
+      ]
+    },
+    {
+      "id": "cpp-memory",
+      "title": "引用、指针与结构体",
+      "summary": "理解“别名”和“地址”，用结构体组织相关字段。",
+      "difficulty": "medium",
+      "order": 5,
+      "knowledgePoints": [
+        "cpp-references",
+        "cpp-pointers",
+        "cpp-structs"
+      ],
+      "prerequisites": [
+        "cpp-data"
+      ]
+    },
+    {
+      "id": "cpp-stl",
+      "title": "STL 容器与算法",
+      "summary": "根据访问方式选择容器，用排序和优先队列解决问题。",
+      "difficulty": "medium",
+      "order": 6,
+      "knowledgePoints": [
+        "cpp-stl",
+        "cpp-sort"
+      ],
+      "prerequisites": [
+        "cpp-data"
+      ]
+    },
+    {
+      "id": "cpp-oop",
+      "title": "类与对象",
+      "summary": "用类封装状态和行为，维护对象的不变量。",
+      "difficulty": "medium",
+      "order": 7,
+      "knowledgePoints": [
+        "cpp-oop"
+      ],
+      "prerequisites": [
+        "cpp-functions",
+        "cpp-structs"
+      ]
+    },
+    {
+      "id": "cpp-template",
+      "title": "模板与泛型",
+      "summary": "让同一个函数或类适配多种类型。",
+      "difficulty": "medium",
+      "order": 8,
+      "knowledgePoints": [
+        "cpp-templates"
+      ],
+      "prerequisites": [
+        "cpp-functions"
+      ]
+    },
+    {
+      "id": "cpp-raii",
+      "title": "异常安全与 RAII",
+      "summary": "让资源跟随对象生命周期自动释放。",
+      "difficulty": "hard",
+      "order": 9,
+      "knowledgePoints": [
+        "cpp-raii"
+      ],
+      "prerequisites": [
+        "cpp-oop",
+        "cpp-pointers"
+      ]
+    },
+    {
+      "id": "cpp-stream",
+      "title": "流与文本处理",
+      "summary": "读整行、切分字段、处理日志和格式化文本。",
+      "difficulty": "medium",
+      "order": 10,
+      "knowledgePoints": [
+        "cpp-streams"
+      ],
+      "prerequisites": [
+        "cpp-strings",
+        "cpp-stl"
+      ]
+    },
+    {
+      "id": "cpp-modern",
+      "title": "现代 C++ 工具箱",
+      "summary": "用 auto、范围 for、lambda 和 constexpr 写出更清晰的代码。",
+      "difficulty": "hard",
+      "order": 11,
+      "knowledgePoints": [
+        "cpp-modern"
+      ],
+      "prerequisites": [
+        "cpp-stl",
+        "cpp-functions"
+      ]
+    },
+    {
+      "id": "cpp-advanced",
+      "title": "进阶：滑动窗口与并查集",
+      "summary": "用双指针维护连续区间，用并查集维护连通关系。",
+      "difficulty": "hard",
+      "order": 12,
+      "knowledgePoints": [
+        "cpp-window",
+        "cpp-dsu"
+      ],
+      "prerequisites": [
+        "cpp-stl",
+        "cpp-modern"
+      ]
+    },
+    {
+      "id": "cpp-capstone",
+      "title": "综合项目：库存管理器",
+      "summary": "把解析、容器、类和边界处理组合成一个可运行的小系统。",
+      "difficulty": "challenge",
+      "order": 13,
+      "knowledgePoints": [
+        "cpp-capstone",
+        "cpp-stl",
+        "cpp-oop"
+      ],
+      "prerequisites": [
+        "cpp-stl",
+        "cpp-oop",
+        "cpp-streams"
+      ]
+    }
+  ]
+}

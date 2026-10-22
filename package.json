@@ -1,0 +1,34 @@
+{
+  "name": "codelab-learning-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "我敲，拟码 - 以练代学的 C++ / Python 编程学习平台",
+  "type": "module",
+  "packageManager": "pnpm@11.28.5",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"pnpm --filter @codelab/server dev\" \"pnpm --filter @codelab/web dev\"",
+    "build": "pnpm --filter @codelab/web build",
+    "start": "pnpm --filter @codelab/server start",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "node scripts/verify-ui.mjs",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "content:verify": "tsx scripts/verify-solutions.ts",
+    "seed:content": "node scripts/seed/run.mjs",
+    "qr:generate": "node scripts/generate-qr.mjs",
+    "check": "pnpm typecheck && pnpm content:validate && pnpm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.0",
+    "playwright-core": "^1.64.1",
+    "qrcode": "^1.5.4",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

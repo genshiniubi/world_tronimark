@@ -1,0 +1,61 @@
+{
+  "id": "cpp-template-02",
+  "slug": "generic-sum",
+  "title": "泛型求和",
+  "moduleId": "cpp-template",
+  "order": 16,
+  "difficulty": "medium",
+  "scenario": "finance",
+  "scenarioLabel": "金融账单",
+  "knowledgePoints": [
+    "cpp-templates"
+  ],
+  "prerequisites": [
+    "cpp-template-01"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "用函数模板对整数序列求和。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "4\n1 2 3 4\n",
+      "output": "10\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "3\n-5 10 2\n",
+      "output": "7\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\n1000000000\n",
+      "output": "1000000000\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "5\n0 0 0 0 0\n",
+      "output": "0\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "3\n1000000000 1000000000 1000000000\n",
+      "output": "3000000000\n"
+    }
+  ],
+  "hints": [
+    "用 T 作为元素类型。",
+    "初始值写 T{0} 或 T(0)。",
+    "返回类型也用 T。"
+  ],
+  "similar": []
+}

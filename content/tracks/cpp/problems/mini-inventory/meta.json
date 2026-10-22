@@ -1,0 +1,61 @@
+{
+  "id": "cpp-capstone-01",
+  "slug": "mini-inventory",
+  "title": "综合项目：小型库存管理器",
+  "moduleId": "cpp-capstone",
+  "order": 20,
+  "difficulty": "challenge",
+  "scenario": "retail",
+  "scenarioLabel": "商业零售",
+  "knowledgePoints": [
+    "cpp-capstone",
+    "cpp-stl",
+    "cpp-oop",
+    "cpp-streams"
+  ],
+  "prerequisites": [
+    "cpp-oop-02",
+    "cpp-stream-01"
+  ],
+  "estimatedMinutes": 30,
+  "summary": "解析 ADD / SELL / QUERY 命令，用 map 维护库存并处理失败操作。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "7\nADD apple 10\nSELL apple 3\nQUERY apple\nSELL apple 10\nADD pear 5\nQUERY pear\nQUERY banana\n",
+      "output": "OK\nOK\n7\nNO\nOK\n5\n0\n",
+      "explanation": "apple 入库 10，卖出 3 剩 7；再卖 10 失败；pear 入库 5；banana 不存在。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "5\nADD a 3\nADD a 2\nSELL a 4\nQUERY a\nSELL a 2\n",
+      "output": "OK\nOK\nOK\n1\nNO\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "3\nQUERY x\nADD x 1\nQUERY x\n",
+      "output": "0\nOK\n1\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "4\nADD b 1000000000\nSELL b 999999999\nQUERY b\nSELL b 1\n",
+      "output": "OK\nOK\n1\nOK\n"
+    }
+  ],
+  "hints": [
+    "用 map<string, long long> 保存库存。",
+    "先读 op 和 name，只有 ADD/SELL 才继续读 qty。",
+    "SELL 前先检查库存是否足够。"
+  ],
+  "similar": []
+}

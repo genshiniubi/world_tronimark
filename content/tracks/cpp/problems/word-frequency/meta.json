@@ -1,0 +1,63 @@
+{
+  "id": "cpp-stl-01",
+  "slug": "word-frequency",
+  "title": "聊天词频统计",
+  "moduleId": "cpp-stl",
+  "order": 11,
+  "difficulty": "medium",
+  "scenario": "text",
+  "scenarioLabel": "文本处理",
+  "knowledgePoints": [
+    "cpp-stl",
+    "cpp-sort"
+  ],
+  "prerequisites": [
+    "cpp-memory-02"
+  ],
+  "estimatedMinutes": 18,
+  "summary": "统计单词出现次数，按次数降序、单词字典序输出。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\napple banana apple cherry banana\n",
+      "output": "apple 2\nbanana 2\ncherry 1\n",
+      "explanation": "apple 和 banana 都是 2 次，按字典序 apple 在前。"
+    },
+    {
+      "id": "sample-2",
+      "input": "1\nhello\n",
+      "output": "hello 1\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3\nb a c\n",
+      "output": "a 1\nb 1\nc 1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "6\nx y x y z z\n",
+      "output": "x 2\ny 2\nz 2\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "4\nsame same same other\n",
+      "output": "same 3\nother 1\n"
+    }
+  ],
+  "hints": [
+    "用 map<string,int> 统计。",
+    "把键值对放进 vector 再排序。",
+    "排序规则：次数降序，次数相同单词升序。"
+  ],
+  "similar": []
+}

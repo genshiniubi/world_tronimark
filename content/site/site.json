@@ -1,0 +1,13 @@
+{
+  "name": "我敲，拟码",
+  "tagline": "从第一行代码，到独立完成一个项目",
+  "description": "以练代学的编程学习平台。用真实情景题、即时判题和 AI 复盘，把 C++ 与 Python 的知识点连成一条可走的路。",
+  "email": "hello@codelab.dev",
+  "wechat": "codelab-support",
+  "github": "https://github.com/your-name/codelab",
+  "sponsor": {
+    "intro": "如果这个项目对你有帮助，欢迎扫码随意赞助。",
+    "tiers": [],
+    "qrNote": "当前为示例二维码，替换为你的收款码即可。"
+  }
+}

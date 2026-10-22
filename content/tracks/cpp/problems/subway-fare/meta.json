@@ -1,0 +1,76 @@
+{
+  "id": "cpp-control-01",
+  "slug": "subway-fare",
+  "title": "地铁票价规则",
+  "moduleId": "cpp-control",
+  "order": 3,
+  "difficulty": "beginner",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "cpp-conditions"
+  ],
+  "prerequisites": [
+    "cpp-start-02"
+  ],
+  "estimatedMinutes": 8,
+  "summary": "按里程区间计算地铁票价，练习多分支条件。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "6\n",
+      "output": "3\n",
+      "explanation": "6 公里以内（含 6）票价 3 元。"
+    },
+    {
+      "id": "sample-2",
+      "input": "13\n",
+      "output": "5\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "0\n",
+      "output": "3\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "7\n",
+      "output": "4\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "12\n",
+      "output": "4\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "22\n",
+      "output": "5\n"
+    },
+    {
+      "id": "hidden-5",
+      "input": "23\n",
+      "output": "6\n"
+    },
+    {
+      "id": "hidden-6",
+      "input": "1000\n",
+      "output": "6\n"
+    }
+  ],
+  "hints": [
+    "按里程从小到大判断。",
+    "注意每个区间的右端点是否包含。"
+  ],
+  "similar": []
+}

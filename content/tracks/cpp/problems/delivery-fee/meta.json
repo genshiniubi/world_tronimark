@@ -1,0 +1,68 @@
+{
+  "id": "cpp-functions-01",
+  "slug": "delivery-fee",
+  "title": "快递运费计算器",
+  "moduleId": "cpp-functions",
+  "order": 5,
+  "difficulty": "easy",
+  "scenario": "logistics",
+  "scenarioLabel": "物流调度",
+  "knowledgePoints": [
+    "cpp-functions"
+  ],
+  "prerequisites": [
+    "cpp-control-02"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "把运费规则封装成函数，处理重量和加急选项。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "1 N\n",
+      "output": "10\n",
+      "explanation": "首重 1 公斤 10 元，不加急。"
+    },
+    {
+      "id": "sample-2",
+      "input": "3 Y\n",
+      "output": "28\n",
+      "explanation": "10 + 2×5 + 8 = 28。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "10 N\n",
+      "output": "55\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "2 Y\n",
+      "output": "23\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "1 Y\n",
+      "output": "18\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "1000 N\n",
+      "output": "5005\n"
+    }
+  ],
+  "hints": [
+    "超过 1 公斤的部分是 weight - 1。",
+    "先算基础运费，再加急。",
+    "把计算写成 int deliveryFee(int weight, bool express)。"
+  ],
+  "similar": []
+}

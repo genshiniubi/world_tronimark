@@ -1,0 +1,165 @@
+{
+  "id": "python",
+  "title": "Python 从入门到数据处理",
+  "subtitle": "用更少的代码解决真实问题",
+  "description": "从输入输出、容器到生成器、标准库和数据处理。题目覆盖生活、商业、文本和系统场景，强调可读性与工程习惯。",
+  "kind": "coding",
+  "language": "python",
+  "accent": "#1f9d63",
+  "icon": "python",
+  "order": 2,
+  "modules": [
+    {
+      "id": "py-start",
+      "title": "起步：输入、输出与类型",
+      "summary": "用 Python 处理输入、做类型转换和格式化输出。",
+      "difficulty": "beginner",
+      "order": 1,
+      "knowledgePoints": [
+        "py-io",
+        "py-types"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "py-control",
+      "title": "条件与循环",
+      "summary": "用条件分支和循环表达规则与重复操作。",
+      "difficulty": "beginner",
+      "order": 2,
+      "knowledgePoints": [
+        "py-conditions",
+        "py-loops"
+      ],
+      "prerequisites": [
+        "py-start"
+      ]
+    },
+    {
+      "id": "py-functions",
+      "title": "函数与模块",
+      "summary": "把逻辑拆成函数，理解参数、返回值和模块。",
+      "difficulty": "easy",
+      "order": 3,
+      "knowledgePoints": [
+        "py-functions"
+      ],
+      "prerequisites": [
+        "py-control"
+      ]
+    },
+    {
+      "id": "py-containers",
+      "title": "列表、字典与集合",
+      "summary": "用合适的容器保存、查找和聚合数据。",
+      "difficulty": "easy",
+      "order": 4,
+      "knowledgePoints": [
+        "py-list",
+        "py-dict"
+      ],
+      "prerequisites": [
+        "py-functions"
+      ]
+    },
+    {
+      "id": "py-text",
+      "title": "字符串与文件",
+      "summary": "清洗文本、切分字段、读写文件。",
+      "difficulty": "medium",
+      "order": 5,
+      "knowledgePoints": [
+        "py-strings",
+        "py-files"
+      ],
+      "prerequisites": [
+        "py-containers"
+      ]
+    },
+    {
+      "id": "py-exceptions",
+      "title": "异常处理",
+      "summary": "让程序在坏输入下给出可预期的结果。",
+      "difficulty": "medium",
+      "order": 6,
+      "knowledgePoints": [
+        "py-exceptions"
+      ],
+      "prerequisites": [
+        "py-functions"
+      ]
+    },
+    {
+      "id": "py-oop",
+      "title": "面向对象",
+      "summary": "用类封装状态，让多个方法协同维护对象。",
+      "difficulty": "medium",
+      "order": 7,
+      "knowledgePoints": [
+        "py-oop"
+      ],
+      "prerequisites": [
+        "py-functions"
+      ]
+    },
+    {
+      "id": "py-iterators",
+      "title": "生成器与装饰器",
+      "summary": "用 yield 惰性产生数据，用装饰器包装函数。",
+      "difficulty": "hard",
+      "order": 8,
+      "knowledgePoints": [
+        "py-generators",
+        "py-decorators"
+      ],
+      "prerequisites": [
+        "py-functions",
+        "py-oop"
+      ]
+    },
+    {
+      "id": "py-stdlib",
+      "title": "标准库工具箱",
+      "summary": "用 pathlib、collections、itertools 等减少重复代码。",
+      "difficulty": "medium",
+      "order": 9,
+      "knowledgePoints": [
+        "py-stdlib"
+      ],
+      "prerequisites": [
+        "py-containers",
+        "py-files"
+      ]
+    },
+    {
+      "id": "py-data",
+      "title": "数据处理入门",
+      "summary": "分组、聚合、排序，生成一份小型报表。",
+      "difficulty": "hard",
+      "order": 10,
+      "knowledgePoints": [
+        "py-data",
+        "py-dict"
+      ],
+      "prerequisites": [
+        "py-containers",
+        "py-stdlib"
+      ]
+    },
+    {
+      "id": "py-advanced",
+      "title": "进阶：滑动窗口与拓扑排序",
+      "summary": "用窗口处理连续子串，用入度和队列处理依赖关系。",
+      "difficulty": "hard",
+      "order": 11,
+      "knowledgePoints": [
+        "py-window",
+        "py-graph"
+      ],
+      "prerequisites": [
+        "py-containers",
+        "py-oop"
+      ]
+    }
+  ]
+}

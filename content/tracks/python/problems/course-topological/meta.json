@@ -1,0 +1,63 @@
+{
+  "id": "py-advanced-02",
+  "slug": "course-topological",
+  "title": "课程安排",
+  "moduleId": "py-advanced",
+  "order": 18,
+  "difficulty": "challenge",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "py-graph",
+    "py-dict"
+  ],
+  "prerequisites": [
+    "py-containers-02"
+  ],
+  "estimatedMinutes": 25,
+  "summary": "用拓扑排序输出字典序最小的课程学习顺序。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "4 3\n1 2\n1 3\n3 4\n",
+      "output": "1 2 3 4\n",
+      "explanation": "1 完成后 2、3 都可选，选字典序更小的 2。"
+    },
+    {
+      "id": "sample-2",
+      "input": "3 3\n1 2\n2 3\n3 1\n",
+      "output": "-1\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3 2\n2 1\n3 1\n",
+      "output": "2 3 1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "5 4\n1 2\n1 3\n2 4\n3 4\n",
+      "output": "1 2 3 4 5\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "1 0\n",
+      "output": "1\n"
+    }
+  ],
+  "hints": [
+    "统计每个节点的入度。",
+    "入度为 0 的节点进入优先队列，保证每次取字典序最小的。",
+    "输出节点数小于 n 说明有环。"
+  ],
+  "similar": []
+}

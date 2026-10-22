@@ -1,0 +1,57 @@
+{
+  "id": "cpp-stream-01",
+  "slug": "log-summary",
+  "title": "日志级别统计",
+  "moduleId": "cpp-stream",
+  "order": 18,
+  "difficulty": "medium",
+  "scenario": "system",
+  "scenarioLabel": "系统工具",
+  "knowledgePoints": [
+    "cpp-streams",
+    "cpp-strings"
+  ],
+  "prerequisites": [
+    "cpp-stl-01"
+  ],
+  "estimatedMinutes": 18,
+  "summary": "读取多行日志，按级别统计 ERROR、WARN、INFO 的数量。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "3\nERROR disk full\nWARN memory high\nINFO started\n",
+      "output": "ERROR 1\nWARN 1\nINFO 1\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\nERROR boom\n",
+      "output": "ERROR 1\nWARN 0\nINFO 0\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "4\nINFO a\nINFO b\nWARN c\nINFO d\n",
+      "output": "ERROR 0\nWARN 1\nINFO 3\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "2\nWARN x\nERROR y\n",
+      "output": "ERROR 1\nWARN 1\nINFO 0\n"
+    }
+  ],
+  "hints": [
+    "读入 n 后要用 cin.ignore() 清掉换行。",
+    "用 getline 读整行，再用 stringstream 取第一个词。",
+    "只统计三个已知级别。"
+  ],
+  "similar": []
+}

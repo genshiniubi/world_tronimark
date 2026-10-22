@@ -1,0 +1,254 @@
+{
+  "knowledgePoints": [
+    {
+      "id": "cpp-io",
+      "title": "输入输出",
+      "description": "cin / cout、getline 与格式化输出。"
+    },
+    {
+      "id": "cpp-variables",
+      "title": "变量与类型",
+      "description": "int、long long、double、char、string 的表示与转换。"
+    },
+    {
+      "id": "cpp-arithmetic",
+      "title": "算术与格式化",
+      "description": "整数除法、取模、浮点误差与 fixed/setprecision。"
+    },
+    {
+      "id": "cpp-conditions",
+      "title": "条件分支",
+      "description": "if / else if / switch 与边界判断。"
+    },
+    {
+      "id": "cpp-loops",
+      "title": "循环",
+      "description": "for、while、范围 for、循环边界与累计器。"
+    },
+    {
+      "id": "cpp-functions",
+      "title": "函数",
+      "description": "参数、返回值、作用域与按引用传递。"
+    },
+    {
+      "id": "cpp-recursion",
+      "title": "递归",
+      "description": "递归出口、递归式与调用栈。"
+    },
+    {
+      "id": "cpp-arrays",
+      "title": "数组与 vector",
+      "description": "下标、遍历、动态数组和常见越界问题。"
+    },
+    {
+      "id": "cpp-strings",
+      "title": "字符串",
+      "description": "string、getline、字符判断与字符串处理。"
+    },
+    {
+      "id": "cpp-references",
+      "title": "引用",
+      "description": "T&、const T& 与原地修改。"
+    },
+    {
+      "id": "cpp-pointers",
+      "title": "指针",
+      "description": "地址、解引用、nullptr 与生命周期。"
+    },
+    {
+      "id": "cpp-structs",
+      "title": "结构体",
+      "description": "把相关字段组织成自定义类型。"
+    },
+    {
+      "id": "cpp-stl",
+      "title": "STL 容器",
+      "description": "vector、map、set、queue、priority_queue 的选择。"
+    },
+    {
+      "id": "cpp-sort",
+      "title": "排序与比较器",
+      "description": "sort、自定义比较、稳定排序与多关键字排序。"
+    },
+    {
+      "id": "cpp-oop",
+      "title": "类与对象",
+      "description": "封装、构造、成员函数与对象状态。"
+    },
+    {
+      "id": "cpp-templates",
+      "title": "模板与泛型",
+      "description": "函数模板、类型参数与泛型代码。"
+    },
+    {
+      "id": "cpp-raii",
+      "title": "RAII 与智能指针",
+      "description": "资源获取即初始化、unique_ptr 与异常安全。"
+    },
+    {
+      "id": "cpp-streams",
+      "title": "流与文本处理",
+      "description": "stringstream、getline、文件流与分词。"
+    },
+    {
+      "id": "cpp-modern",
+      "title": "现代 C++",
+      "description": "auto、范围 for、lambda、constexpr 与现代写法。"
+    },
+    {
+      "id": "cpp-window",
+      "title": "滑动窗口",
+      "description": "双指针维护窗口，处理子串、子数组的连续区间问题。"
+    },
+    {
+      "id": "cpp-dsu",
+      "title": "并查集",
+      "description": "合并集合、查询连通性与路径压缩。"
+    },
+    {
+      "id": "cpp-capstone",
+      "title": "综合应用",
+      "description": "组合容器、类和解析逻辑完成一个小系统。"
+    },
+    {
+      "id": "py-io",
+      "title": "Python 输入输出",
+      "description": "input、print、f-string 与类型转换。"
+    },
+    {
+      "id": "py-types",
+      "title": "Python 类型",
+      "description": "int、float、str、bool 与动态类型。"
+    },
+    {
+      "id": "py-conditions",
+      "title": "Python 条件",
+      "description": "if / elif / else 与真值判断。"
+    },
+    {
+      "id": "py-loops",
+      "title": "Python 循环",
+      "description": "for、while、range、enumerate 与 break/continue。"
+    },
+    {
+      "id": "py-functions",
+      "title": "Python 函数",
+      "description": "def、参数、返回值、作用域与模块。"
+    },
+    {
+      "id": "py-list",
+      "title": "列表与元组",
+      "description": "下标、切片、推导式与可变/不可变序列。"
+    },
+    {
+      "id": "py-dict",
+      "title": "字典与集合",
+      "description": "键值查找、去重、计数与排序。"
+    },
+    {
+      "id": "py-strings",
+      "title": "字符串处理",
+      "description": "split、join、strip、replace 与大小写。"
+    },
+    {
+      "id": "py-files",
+      "title": "文件与路径",
+      "description": "open、with、编码与 pathlib。"
+    },
+    {
+      "id": "py-exceptions",
+      "title": "异常处理",
+      "description": "try / except / else / finally 与错误恢复。"
+    },
+    {
+      "id": "py-oop",
+      "title": "面向对象",
+      "description": "class、self、__init__、封装与对象协作。"
+    },
+    {
+      "id": "py-generators",
+      "title": "生成器",
+      "description": "yield、惰性求值与迭代器协议。"
+    },
+    {
+      "id": "py-window",
+      "title": "滑动窗口",
+      "description": "用双指针和哈希表维护连续区间的约束。"
+    },
+    {
+      "id": "py-graph",
+      "title": "图与拓扑排序",
+      "description": "邻接表、入度、BFS 与有向无环图。"
+    },
+    {
+      "id": "py-decorators",
+      "title": "装饰器",
+      "description": "函数是一等对象、闭包与包装函数。"
+    },
+    {
+      "id": "py-stdlib",
+      "title": "Python 标准库",
+      "description": "pathlib、collections、itertools、json、datetime。"
+    },
+    {
+      "id": "py-data",
+      "title": "数据处理",
+      "description": "分组、聚合、排序与简单报表。"
+    },
+    {
+      "id": "algo-binary",
+      "title": "二分",
+      "description": "二分查找、边界收缩与二分答案。"
+    },
+    {
+      "id": "algo-dp",
+      "title": "动态规划",
+      "description": "状态定义、转移方程、初始化与空间优化。"
+    },
+    {
+      "id": "algo-sort",
+      "title": "排序",
+      "description": "排序规则、比较器与多关键字。"
+    },
+    {
+      "id": "algo-greedy",
+      "title": "贪心",
+      "description": "局部最优选择与正确性直觉。"
+    },
+    {
+      "id": "algo-graph",
+      "title": "图论基础",
+      "description": "网格图、BFS、连通性与最短步数。"
+    },
+    {
+      "id": "algo-complexity",
+      "title": "复杂度",
+      "description": "用 O 记号估算时间与空间增长。"
+    },
+    {
+      "id": "sys-linux",
+      "title": "Linux 与命令行",
+      "description": "路径、权限、管道、进程与常用命令。"
+    },
+    {
+      "id": "sys-git",
+      "title": "Git 与版本控制",
+      "description": "提交、分支、合并、回滚与协作。"
+    },
+    {
+      "id": "sys-network",
+      "title": "计算机网络",
+      "description": "IP、DNS、TCP、HTTP 与一次请求的旅程。"
+    },
+    {
+      "id": "sys-db",
+      "title": "数据库与 SQL",
+      "description": "表、索引、查询、事务与数据建模。"
+    },
+    {
+      "id": "sys-os",
+      "title": "程序如何运行",
+      "description": "CPU、内存、进程、系统调用与编译链接。"
+    }
+  ]
+}

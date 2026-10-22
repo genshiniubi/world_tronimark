@@ -1,0 +1,63 @@
+{
+  "id": "cpp-memory-02",
+  "slug": "contact-sort",
+  "title": "通讯录排序",
+  "moduleId": "cpp-memory",
+  "order": 10,
+  "difficulty": "medium",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "cpp-structs",
+    "cpp-sort"
+  ],
+  "prerequisites": [
+    "cpp-memory-01"
+  ],
+  "estimatedMinutes": 18,
+  "summary": "用结构体保存联系人，按年龄和姓名排序。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "3\nAlice 20\nBob 18\nCarol 20\n",
+      "output": "Bob 18\nAlice 20\nCarol 20\n",
+      "explanation": "Bob 年龄最小；Alice 和 Carol 同岁，按姓名字典序。"
+    },
+    {
+      "id": "sample-2",
+      "input": "2\nz 30\na 30\n",
+      "output": "a 30\nz 30\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\nTom 25\n",
+      "output": "Tom 25\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "4\nB 19\nA 19\nD 18\nC 20\n",
+      "output": "D 18\nA 19\nB 19\nC 20\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "3\nAmy 20\nAmy 20\nBob 20\n",
+      "output": "Amy 20\nAmy 20\nBob 20\n"
+    }
+  ],
+  "hints": [
+    "定义 struct Person { string name; int age; }。",
+    "比较器先比 age，再比 name。",
+    "姓名相同、年龄相同也没关系，稳定排序不是必须的。"
+  ],
+  "similar": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "py-data-01",
+  "slug": "sales-report",
+  "title": "销售报表",
+  "moduleId": "py-data",
+  "order": 16,
+  "difficulty": "hard",
+  "scenario": "data",
+  "scenarioLabel": "数据分析",
+  "knowledgePoints": [
+    "py-data",
+    "py-dict"
+  ],
+  "prerequisites": [
+    "py-stdlib-01"
+  ],
+  "estimatedMinutes": 22,
+  "summary": "按商品聚合销售额，并按金额降序、名称升序输出。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\napple 10\nbanana 20\napple 5\ncherry 20\nbanana 1\n",
+      "output": "banana 21\ncherry 20\napple 15\n",
+      "explanation": "banana 21、cherry 20、apple 15，按金额降序排列。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3\na 10\nb 10\nc 10\n",
+      "output": "a 10\nb 10\nc 10\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "4\nx 5\nx 5\ny 9\nz 1\n",
+      "output": "x 10\ny 9\nz 1\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "2\nb 100\na 100\n",
+      "output": "a 100\nb 100\n"
+    }
+  ],
+  "hints": [
+    "用 dict 累加每个商品的金额。",
+    "排序 key 写成 (-total, product)。",
+    "金额相同时按商品名字典序。"
+  ],
+  "similar": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "py-functions-01",
+  "slug": "bill-split",
+  "title": "账单分摊",
+  "moduleId": "py-functions",
+  "order": 5,
+  "difficulty": "easy",
+  "scenario": "finance",
+  "scenarioLabel": "金融账单",
+  "knowledgePoints": [
+    "py-functions"
+  ],
+  "prerequisites": [
+    "py-control-02"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "把总金额、人数和小费比例封装成分摊函数。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "300 3 10\n",
+      "output": "110.00\n",
+      "explanation": "300 × 1.1 ÷ 3 = 110。"
+    },
+    {
+      "id": "sample-2",
+      "input": "100 4 0\n",
+      "output": "25.00\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "0 5 20\n",
+      "output": "0.00\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "199.9 2 15\n",
+      "output": "114.94\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "50 3 10\n",
+      "output": "18.33\n"
+    }
+  ],
+  "hints": [
+    "函数签名建议带默认参数 tip_percent=0。",
+    "先算含小费总额，再除以人数。",
+    "输出格式在 main 流程里处理。"
+  ],
+  "similar": []
+}

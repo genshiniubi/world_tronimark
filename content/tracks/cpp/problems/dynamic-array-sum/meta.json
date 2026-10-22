@@ -1,0 +1,62 @@
+{
+  "id": "cpp-raii-01",
+  "slug": "dynamic-array-sum",
+  "title": "动态数组求和",
+  "moduleId": "cpp-raii",
+  "order": 17,
+  "difficulty": "hard",
+  "scenario": "system",
+  "scenarioLabel": "系统工具",
+  "knowledgePoints": [
+    "cpp-raii",
+    "cpp-pointers"
+  ],
+  "prerequisites": [
+    "cpp-memory-02"
+  ],
+  "estimatedMinutes": 18,
+  "summary": "用 unique_ptr 管理动态数组，避免手动 delete。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "4\n1 2 3 4\n",
+      "output": "10\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "3\n-1 5 -2\n",
+      "output": "2\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\n1000000000\n",
+      "output": "1000000000\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "5\n0 0 0 0 0\n",
+      "output": "0\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "3\n1000000000 1000000000 1000000000\n",
+      "output": "3000000000\n"
+    }
+  ],
+  "hints": [
+    "用 auto data = make_unique<int[]>(n)。",
+    "unique_ptr 不能复制，但可以下标访问。",
+    "不需要手动 delete[]。"
+  ],
+  "similar": []
+}

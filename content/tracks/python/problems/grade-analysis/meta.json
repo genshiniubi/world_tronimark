@@ -1,0 +1,61 @@
+{
+  "id": "py-containers-01",
+  "slug": "grade-analysis",
+  "title": "成绩分析",
+  "moduleId": "py-containers",
+  "order": 7,
+  "difficulty": "easy",
+  "scenario": "science",
+  "scenarioLabel": "科学计算",
+  "knowledgePoints": [
+    "py-list"
+  ],
+  "prerequisites": [
+    "py-functions-02"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "用列表保存成绩，计算平均分、最高分、最低分和及格人数。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\n90 80 70 60 50\n",
+      "output": "70.00 90 50 4\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "3\n59 58 57\n",
+      "output": "58.00 59 57 0\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\n100\n",
+      "output": "100.00 100 100 1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "4\n0 100 100 0\n",
+      "output": "50.00 100 0 2\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "6\n60 61 62 63 64 65\n",
+      "output": "62.50 65 60 6\n"
+    }
+  ],
+  "hints": [
+    "用 list(map(int, input().split())) 读入。",
+    "sum / len 求平均。",
+    "生成器表达式配合 sum 统计及格人数。"
+  ],
+  "similar": []
+}

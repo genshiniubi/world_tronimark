@@ -1,0 +1,75 @@
+{
+  "id": "systems",
+  "title": "系统基础",
+  "subtitle": "从命令行到数据库，理解程序脚下的地基",
+  "description": "一条不写代码也能练的知识路径：Linux、Git、网络、数据库和操作系统。每个模块都有知识卡、动手命令和自查问题。",
+  "kind": "knowledge",
+  "accent": "#0f766e",
+  "icon": "terminal",
+  "order": 4,
+  "modules": [
+    {
+      "id": "sys-linux",
+      "title": "Linux 与命令行",
+      "summary": "路径、文件、权限、管道与进程，建立和操作系统对话的手感。",
+      "difficulty": "beginner",
+      "order": 1,
+      "knowledgePoints": [
+        "sys-linux"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "sys-git",
+      "title": "Git 与版本控制",
+      "summary": "提交、分支、合并、回滚，把“改坏了”变成可恢复。",
+      "difficulty": "easy",
+      "order": 2,
+      "knowledgePoints": [
+        "sys-git"
+      ],
+      "prerequisites": [
+        "sys-linux"
+      ]
+    },
+    {
+      "id": "sys-network",
+      "title": "网络基础：一次请求的旅程",
+      "summary": "从 URL 到 DNS、TCP、HTTP，理解浏览器和后端之间发生了什么。",
+      "difficulty": "medium",
+      "order": 3,
+      "knowledgePoints": [
+        "sys-network"
+      ],
+      "prerequisites": [
+        "sys-linux"
+      ]
+    },
+    {
+      "id": "sys-db",
+      "title": "数据库与 SQL 基础",
+      "summary": "表、索引、查询、事务，理解数据如何被可靠地保存。",
+      "difficulty": "medium",
+      "order": 4,
+      "knowledgePoints": [
+        "sys-db"
+      ],
+      "prerequisites": [
+        "sys-network"
+      ]
+    },
+    {
+      "id": "sys-os",
+      "title": "程序如何运行",
+      "summary": "从源码到进程：编译、链接、内存、系统调用和调度。",
+      "difficulty": "hard",
+      "order": 5,
+      "knowledgePoints": [
+        "sys-os"
+      ],
+      "prerequisites": [
+        "sys-linux"
+      ]
+    }
+  ]
+}

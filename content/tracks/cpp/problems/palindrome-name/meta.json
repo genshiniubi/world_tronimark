@@ -1,0 +1,67 @@
+{
+  "id": "cpp-data-02",
+  "slug": "palindrome-name",
+  "title": "回文昵称",
+  "moduleId": "cpp-data",
+  "order": 8,
+  "difficulty": "easy",
+  "scenario": "text",
+  "scenarioLabel": "文本处理",
+  "knowledgePoints": [
+    "cpp-strings"
+  ],
+  "prerequisites": [
+    "cpp-data-01"
+  ],
+  "estimatedMinutes": 10,
+  "summary": "忽略大小写判断一个字符串是否回文。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "Level\n",
+      "output": "YES\n",
+      "explanation": "忽略大小写后 level 是回文。"
+    },
+    {
+      "id": "sample-2",
+      "input": "hello\n",
+      "output": "NO\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "A\n",
+      "output": "YES\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "AbBa\n",
+      "output": "YES\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "abcda\n",
+      "output": "NO\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "12321\n",
+      "output": "YES\n"
+    }
+  ],
+  "hints": [
+    "用两个下标从两端向中间比较。",
+    "可以先用 tolower 统一大小写。",
+    "遇到不一致立即输出 NO。"
+  ],
+  "similar": []
+}

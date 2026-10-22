@@ -1,0 +1,68 @@
+{
+  "id": "py-advanced-01",
+  "slug": "at-most-k-distinct",
+  "title": "最多 K 个不同字符",
+  "moduleId": "py-advanced",
+  "order": 17,
+  "difficulty": "hard",
+  "scenario": "text",
+  "scenarioLabel": "文本处理",
+  "knowledgePoints": [
+    "py-window",
+    "py-dict"
+  ],
+  "prerequisites": [
+    "py-containers-02"
+  ],
+  "estimatedMinutes": 20,
+  "summary": "用滑动窗口求最多包含 k 个不同字符的最长子串。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "eceba 2\n",
+      "output": "3\n",
+      "explanation": "ece 含 e、c 两种字符。"
+    },
+    {
+      "id": "sample-2",
+      "input": "aa 1\n",
+      "output": "2\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "abc 3\n",
+      "output": "3\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "a 0\n",
+      "output": "0\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "abaccc 2\n",
+      "output": "4\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "aabbcc 2\n",
+      "output": "4\n"
+    }
+  ],
+  "hints": [
+    "字典记录窗口内每个字符出现次数。",
+    "不同字符数超过 k 时，移动左指针并减少计数。",
+    "计数减到 0 时从字典删除该键，len(counts) 才是不同字符数。"
+  ],
+  "similar": []
+}

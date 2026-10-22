@@ -1,0 +1,68 @@
+{
+  "id": "cpp-advanced-01",
+  "slug": "longest-unique-substring",
+  "title": "最长无重复子串",
+  "moduleId": "cpp-advanced",
+  "order": 21,
+  "difficulty": "hard",
+  "scenario": "text",
+  "scenarioLabel": "文本处理",
+  "knowledgePoints": [
+    "cpp-window",
+    "cpp-strings"
+  ],
+  "prerequisites": [
+    "cpp-data-02"
+  ],
+  "estimatedMinutes": 20,
+  "summary": "用滑动窗口求不含重复字符的最长子串长度。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "abcabcbb\n",
+      "output": "3\n",
+      "explanation": "最长的是 abc。"
+    },
+    {
+      "id": "sample-2",
+      "input": "bbbbb\n",
+      "output": "1\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "pwwkew\n",
+      "output": "3\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "abcdef\n",
+      "output": "6\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "abba\n",
+      "output": "2\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "a\n",
+      "output": "1\n"
+    }
+  ],
+  "hints": [
+    "窗口内不能有重复字符。",
+    "右指针每次加入 s[right]，用 last 记录字符上次出现的位置。",
+    "左指针更新为 max(left, last[ch] + 1)。"
+  ],
+  "similar": []
+}

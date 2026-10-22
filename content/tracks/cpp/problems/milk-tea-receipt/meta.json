@@ -1,0 +1,62 @@
+{
+  "id": "cpp-start-01",
+  "slug": "milk-tea-receipt",
+  "title": "奶茶店订单小票",
+  "moduleId": "cpp-start",
+  "order": 1,
+  "difficulty": "beginner",
+  "scenario": "retail",
+  "scenarioLabel": "商业零售",
+  "knowledgePoints": [
+    "cpp-io",
+    "cpp-variables",
+    "cpp-arithmetic"
+  ],
+  "prerequisites": [],
+  "estimatedMinutes": 10,
+  "summary": "读入单价、数量和折扣，输出保留两位小数的实付金额。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "12 3 10\n",
+      "output": "32.40\n",
+      "explanation": "原价 36 元，折扣 3.6 元，实付 32.4 元。"
+    },
+    {
+      "id": "sample-2",
+      "input": "5 4 0\n",
+      "output": "20.00\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "99 2 25\n",
+      "output": "148.50\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "1 1 100\n",
+      "output": "0.00\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "19 7 15\n",
+      "output": "113.05\n"
+    }
+  ],
+  "hints": [
+    "原价 = 单价 × 数量。",
+    "折扣金额 = 原价 × 折扣百分比 ÷ 100。",
+    "输出前用 cout << fixed << setprecision(2)。"
+  ],
+  "similar": []
+}

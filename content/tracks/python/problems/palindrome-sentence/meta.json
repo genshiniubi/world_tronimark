@@ -1,0 +1,62 @@
+{
+  "id": "py-text-02",
+  "slug": "palindrome-sentence",
+  "title": "回文句子",
+  "moduleId": "py-text",
+  "order": 10,
+  "difficulty": "medium",
+  "scenario": "text",
+  "scenarioLabel": "文本处理",
+  "knowledgePoints": [
+    "py-strings"
+  ],
+  "prerequisites": [
+    "py-text-01"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "忽略大小写、空格和标点，判断句子是否回文。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "A man, a plan, a canal: Panama\n",
+      "output": "YES\n",
+      "explanation": "清洗后为 amanaplanacanalpanama，是回文。"
+    },
+    {
+      "id": "sample-2",
+      "input": "Hello, world!\n",
+      "output": "NO\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "Racecar\n",
+      "output": "YES\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "No lemon, no melon\n",
+      "output": "YES\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "abc\n",
+      "output": "NO\n"
+    }
+  ],
+  "hints": [
+    "只保留 ch.isalnum() 的字符。",
+    "统一转成小写。",
+    "比较清洗后的字符串和它的反转。"
+  ],
+  "similar": []
+}

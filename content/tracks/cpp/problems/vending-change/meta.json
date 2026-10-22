@@ -1,0 +1,64 @@
+{
+  "id": "cpp-start-02",
+  "slug": "vending-change",
+  "title": "自动售货机的找零",
+  "moduleId": "cpp-start",
+  "order": 2,
+  "difficulty": "beginner",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "cpp-io",
+    "cpp-variables",
+    "cpp-arithmetic"
+  ],
+  "prerequisites": [
+    "cpp-start-01"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "计算找零，并拆成 10 元、5 元、1 元纸币/硬币的数量。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "20 13\n",
+      "output": "7 0 1 2\n",
+      "explanation": "找零 7 元，用 1 张 5 元和 2 枚 1 元。"
+    },
+    {
+      "id": "sample-2",
+      "input": "5 8\n",
+      "output": "ERROR\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "10 10\n",
+      "output": "0 0 0 0\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "100 37\n",
+      "output": "63 6 0 3\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "50 49\n",
+      "output": "1 0 0 1\n"
+    }
+  ],
+  "hints": [
+    "先判断支付是否足够。",
+    "10 元张数 = change / 10，然后 change %= 10。",
+    "按 10、5、1 的顺序依次拆分。"
+  ],
+  "similar": []
+}

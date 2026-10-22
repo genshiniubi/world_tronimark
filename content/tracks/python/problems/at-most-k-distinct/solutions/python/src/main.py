@@ -1,0 +1,16 @@
+s, k = input().split()
+k = int(k)
+
+left = 0
+counts = {}
+best = 0
+for right, ch in enumerate(s):
+    counts[ch] = counts.get(ch, 0) + 1
+    while len(counts) > k:
+        out = s[left]
+        counts[out] -= 1
+        if counts[out] == 0:
+            del counts[out]
+        left += 1
+    best = max(best, right - left + 1)
+print(best)

@@ -1,0 +1,68 @@
+{
+  "id": "algorithms",
+  "title": "算法专题：二分、贪心与图",
+  "subtitle": "把套路变成可解释的思考过程",
+  "description": "语言无关的算法专项训练，同时提供 C++ 与 Python 起始代码。每道题都要求写清搜索空间、状态定义和复杂度。",
+  "kind": "coding",
+  "accent": "#8b5cf6",
+  "icon": "algorithm",
+  "order": 3,
+  "modules": [
+    {
+      "id": "algo-binary",
+      "title": "二分查找与二分答案",
+      "summary": "在有序空间中缩小范围，把“可行性”转化为二分问题。",
+      "difficulty": "medium",
+      "order": 1,
+      "knowledgePoints": [
+        "algo-binary",
+        "algo-complexity"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "algo-dp",
+      "title": "动态规划入门",
+      "summary": "定义状态、写转移、处理初始化和空间优化。",
+      "difficulty": "hard",
+      "order": 2,
+      "knowledgePoints": [
+        "algo-dp",
+        "algo-complexity"
+      ],
+      "prerequisites": [
+        "algo-binary"
+      ]
+    },
+    {
+      "id": "algo-greedy",
+      "title": "贪心与区间",
+      "summary": "用排序和局部最优选择解决区间、分配类问题。",
+      "difficulty": "hard",
+      "order": 3,
+      "knowledgePoints": [
+        "algo-greedy",
+        "algo-sort",
+        "algo-complexity"
+      ],
+      "prerequisites": [
+        "algo-binary"
+      ]
+    },
+    {
+      "id": "algo-graph",
+      "title": "图论入门：网格与最短路",
+      "summary": "用 BFS 在网格上求连通块和最短步数。",
+      "difficulty": "hard",
+      "order": 4,
+      "knowledgePoints": [
+        "algo-graph",
+        "algo-binary",
+        "algo-complexity"
+      ],
+      "prerequisites": [
+        "algo-binary"
+      ]
+    }
+  ]
+}

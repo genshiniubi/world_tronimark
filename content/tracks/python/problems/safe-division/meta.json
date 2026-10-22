@@ -1,0 +1,66 @@
+{
+  "id": "py-exceptions-01",
+  "slug": "safe-division",
+  "title": "安全除法",
+  "moduleId": "py-exceptions",
+  "order": 11,
+  "difficulty": "medium",
+  "scenario": "finance",
+  "scenarioLabel": "金融账单",
+  "knowledgePoints": [
+    "py-exceptions"
+  ],
+  "prerequisites": [
+    "py-functions-02"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "用异常处理完成除法，遇到非法输入返回 ERROR。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "10 4\n",
+      "output": "2.50\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "10 0\n",
+      "output": "ERROR\n"
+    },
+    {
+      "id": "sample-3",
+      "input": "abc 2\n",
+      "output": "ERROR\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1 3\n",
+      "output": "0.33\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "-5 2\n",
+      "output": "-2.50\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "1.5 0.5\n",
+      "output": "3.00\n"
+    }
+  ],
+  "hints": [
+    "把转换和除法都放进 try。",
+    "捕获 ValueError 和 ZeroDivisionError。",
+    "用 else 处理成功分支。"
+  ],
+  "similar": []
+}

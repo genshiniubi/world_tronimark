@@ -1,0 +1,65 @@
+{
+  "id": "algo-binary-02",
+  "slug": "wood-cut",
+  "title": "木材切割",
+  "moduleId": "algo-binary",
+  "order": 2,
+  "difficulty": "hard",
+  "scenario": "logistics",
+  "scenarioLabel": "物流调度",
+  "knowledgePoints": [
+    "algo-binary",
+    "algo-complexity"
+  ],
+  "prerequisites": [
+    "algo-binary-01"
+  ],
+  "estimatedMinutes": 25,
+  "summary": "二分答案：求能切出至少 k 段等长木材的最大长度。",
+  "languages": [
+    "cpp",
+    "python"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp",
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "4 7\n5 9 12 8\n",
+      "output": "4\n",
+      "explanation": "L=4 时可切 1+2+3+2=8 段；L=5 时只有 5 段。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3 5\n4 4 4\n",
+      "output": "2\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "1 1\n10\n",
+      "output": "10\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "5 3\n6 6 6 6 6\n",
+      "output": "6\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "4 11\n10 10 10 10\n",
+      "output": "3\n"
+    }
+  ],
+  "hints": [
+    "答案 L 越大，能切出的段数越少，具有单调性。",
+    "二分 L，check(L) 统计 sum(length / L)。",
+    "L 的范围是 [1, maxLength]。"
+  ],
+  "similar": []
+}

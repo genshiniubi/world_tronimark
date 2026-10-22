@@ -1,0 +1,61 @@
+{
+  "id": "py-iterators-01",
+  "slug": "fibonacci-generator",
+  "title": "斐波那契生成器",
+  "moduleId": "py-iterators",
+  "order": 13,
+  "difficulty": "medium",
+  "scenario": "science",
+  "scenarioLabel": "科学计算",
+  "knowledgePoints": [
+    "py-generators"
+  ],
+  "prerequisites": [
+    "py-functions-01"
+  ],
+  "estimatedMinutes": 15,
+  "summary": "用 yield 生成前 n 个斐波那契数。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "5\n",
+      "output": "0 1 1 2 3\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "1\n",
+      "output": "0\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "2\n",
+      "output": "0 1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "7\n",
+      "output": "0 1 1 2 3 5 8\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "10\n",
+      "output": "0 1 1 2 3 5 8 13 21 34\n"
+    }
+  ],
+  "hints": [
+    "生成器用 yield 而不是 return。",
+    "维护 a, b 两个变量。",
+    "n=1 时只输出 0。"
+  ],
+  "similar": []
+}

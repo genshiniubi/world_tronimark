@@ -1,0 +1,67 @@
+{
+  "id": "py-iterators-02",
+  "slug": "memo-fib",
+  "title": "带缓存的斐波那契",
+  "moduleId": "py-iterators",
+  "order": 14,
+  "difficulty": "hard",
+  "scenario": "algorithm",
+  "scenarioLabel": "算法竞赛",
+  "knowledgePoints": [
+    "py-decorators",
+    "py-functions"
+  ],
+  "prerequisites": [
+    "py-iterators-01"
+  ],
+  "estimatedMinutes": 20,
+  "summary": "用装饰器实现缓存，避免重复递归计算。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "10\n",
+      "output": "55\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "0\n",
+      "output": "0\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\n",
+      "output": "1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "20\n",
+      "output": "6765\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "50\n",
+      "output": "586268941\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "200\n",
+      "output": "349361645\n"
+    }
+  ],
+  "hints": [
+    "装饰器接收 fn，返回 wrapper。",
+    "用字典缓存参数和结果。",
+    "每次结果取模，避免大整数。"
+  ],
+  "similar": []
+}

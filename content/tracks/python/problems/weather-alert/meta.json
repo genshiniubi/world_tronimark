@@ -1,0 +1,73 @@
+{
+  "id": "py-control-01",
+  "slug": "weather-alert",
+  "title": "天气预警",
+  "moduleId": "py-control",
+  "order": 3,
+  "difficulty": "beginner",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "py-conditions"
+  ],
+  "prerequisites": [
+    "py-start-02"
+  ],
+  "estimatedMinutes": 12,
+  "summary": "根据温度和风力输出四级天气预警。",
+  "languages": [
+    "python"
+  ],
+  "entryFiles": {
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "36 3\n",
+      "output": "RED\n",
+      "explanation": "温度达到 35。"
+    },
+    {
+      "id": "sample-2",
+      "input": "28 8\n",
+      "output": "ORANGE\n",
+      "explanation": "风力达到 7。"
+    },
+    {
+      "id": "sample-3",
+      "input": "26 2\n",
+      "output": "YELLOW\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "20 1\n",
+      "output": "GREEN\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "30 0\n",
+      "output": "ORANGE\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "25 0\n",
+      "output": "YELLOW\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "0 10\n",
+      "output": "RED\n"
+    }
+  ],
+  "hints": [
+    "用 if / elif / else 从最高等级往下判断。",
+    "条件之间是“或”的关系。",
+    "一旦满足最高等级就不要再往下判断。"
+  ],
+  "similar": []
+}

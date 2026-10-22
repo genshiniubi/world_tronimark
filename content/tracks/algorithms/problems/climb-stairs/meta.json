@@ -1,0 +1,70 @@
+{
+  "id": "algo-dp-01",
+  "slug": "climb-stairs",
+  "title": "爬楼梯",
+  "moduleId": "algo-dp",
+  "order": 3,
+  "difficulty": "medium",
+  "scenario": "algorithm",
+  "scenarioLabel": "算法竞赛",
+  "knowledgePoints": [
+    "algo-dp",
+    "algo-complexity"
+  ],
+  "prerequisites": [
+    "algo-binary-02"
+  ],
+  "estimatedMinutes": 15,
+  "summary": "每次走 1 或 2 级，求到达第 n 级的方案数。",
+  "languages": [
+    "cpp",
+    "python"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp",
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "3\n",
+      "output": "3\n",
+      "explanation": "1+1+1、1+2、2+1。"
+    },
+    {
+      "id": "sample-2",
+      "input": "10\n",
+      "output": "89\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "1\n",
+      "output": "1\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "2\n",
+      "output": "2\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "5\n",
+      "output": "8\n"
+    },
+    {
+      "id": "hidden-4",
+      "input": "50\n",
+      "output": "365010934\n"
+    }
+  ],
+  "hints": [
+    "dp[i] 表示到第 i 级的方案数。",
+    "dp[i] = dp[i-1] + dp[i-2]。",
+    "dp[0]=1，dp[1]=1。"
+  ],
+  "similar": []
+}

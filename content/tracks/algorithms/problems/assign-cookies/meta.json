@@ -1,0 +1,64 @@
+{
+  "id": "algo-greedy-02",
+  "slug": "assign-cookies",
+  "title": "分发饼干",
+  "moduleId": "algo-greedy",
+  "order": 6,
+  "difficulty": "medium",
+  "scenario": "life",
+  "scenarioLabel": "生活服务",
+  "knowledgePoints": [
+    "algo-greedy",
+    "algo-sort"
+  ],
+  "prerequisites": [
+    "algo-greedy-01"
+  ],
+  "estimatedMinutes": 15,
+  "summary": "用最小的饼干满足尽可能多的孩子。",
+  "languages": [
+    "cpp",
+    "python"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp",
+    "python": "src/main.py"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "3 2\n1 2 3\n1 1\n",
+      "output": "1\n"
+    },
+    {
+      "id": "sample-2",
+      "input": "2 3\n1 2\n1 2 3\n",
+      "output": "2\n"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3 3\n10 9 8\n8 9 10\n",
+      "output": "3\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "1 1\n5\n4\n",
+      "output": "0\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "4 4\n1 2 3 4\n1 2 3 4\n",
+      "output": "4\n"
+    }
+  ],
+  "hints": [
+    "两个孩子和饼干都排序。",
+    "用两个指针，饼干够就满足当前孩子，两个指针都前进。",
+    "饼干不够时只移动饼干指针。"
+  ],
+  "similar": []
+}

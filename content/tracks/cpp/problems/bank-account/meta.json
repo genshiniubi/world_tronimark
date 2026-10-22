@@ -1,0 +1,57 @@
+{
+  "id": "cpp-oop-01",
+  "slug": "bank-account",
+  "title": "银行账户",
+  "moduleId": "cpp-oop",
+  "order": 13,
+  "difficulty": "medium",
+  "scenario": "finance",
+  "scenarioLabel": "金融账单",
+  "knowledgePoints": [
+    "cpp-oop"
+  ],
+  "prerequisites": [
+    "cpp-functions-02"
+  ],
+  "estimatedMinutes": 20,
+  "summary": "用类封装账户余额，处理存款、取款和余额查询。",
+  "languages": [
+    "cpp"
+  ],
+  "entryFiles": {
+    "cpp": "src/main.cpp"
+  },
+  "timeLimitMs": 2000,
+  "checker": "token",
+  "samples": [
+    {
+      "id": "sample-1",
+      "input": "6\nDEPOSIT 100\nWITHDRAW 30\nBALANCE\nWITHDRAW 100\nDEPOSIT 20\nBALANCE\n",
+      "output": "OK\nOK\n70\nERROR\nOK\n90\n",
+      "explanation": "余额 100，取 30 得 70；再取 100 失败；存 20 得 90。"
+    }
+  ],
+  "tests": [
+    {
+      "id": "hidden-1",
+      "input": "3\nBALANCE\nDEPOSIT 5\nBALANCE\n",
+      "output": "0\nOK\n5\n"
+    },
+    {
+      "id": "hidden-2",
+      "input": "2\nWITHDRAW 1\nDEPOSIT 10\n",
+      "output": "ERROR\nOK\n"
+    },
+    {
+      "id": "hidden-3",
+      "input": "4\nDEPOSIT 1000000000\nDEPOSIT 1000000000\nWITHDRAW 2000000000\nBALANCE\n",
+      "output": "OK\nOK\nOK\n0\n"
+    }
+  ],
+  "hints": [
+    "类里用 long long balance_ 保存余额。",
+    "withdraw 返回 bool，成功才扣款。",
+    "命令用 string 读入，金额用 long long。"
+  ],
+  "similar": []
+}
